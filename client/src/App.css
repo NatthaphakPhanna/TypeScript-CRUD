@@ -1,0 +1,80 @@
+/* Basic Styling for the Entire App */
+body {
+  font-family: sans-serif;
+  margin: 20px;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+/* Form Styling */
+form {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.form-control {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  box-sizing: border-box; /* Include padding and border in the element's total width and height */
+  margin-top: 5px;
+}
+
+button[type="submit"] {
+  background-color: #5cb85c; /* Green */
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+button[type="submit"]:hover {
+  background-color: #4cae4c; /* Darker Green */
+}
+
+/* List Styling */
+li {
+  background-color: #fff;
+  padding: 10px;
+  margin-bottom: 5px;
+  border-radius: 3px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  list-style: none; /* Remove default bullet points */
+  display:flex;
+  justify-content: space-between;
+}
+li div{
+    display:flex;
+    gap: 1rem;
+}
+
+/* Responsive Design (adjust as needed) */
+@media (max-width: 600px) {
+  form {
+    padding: 10px;
+  }
+
+  .form-control {
+    padding: 8px;
+  }
+
+  button[type="submit"] {
+    padding: 8px 16px;
+  }
+}
